@@ -65,6 +65,7 @@ button {
 .sub_menu_item:hover {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
+    background-color: #FFFFFF;
 }
 .navbar_list{
     width: 100%;
