@@ -8,79 +8,83 @@
 </head>
 <body>
 <header class="header">
-    <nav class="navbar">
-        <ul class="navbar__list">
-            <li class="navbar__item">
-                <button class="navbar__button">
-                <img src="./assets/burger.svg" alt="">
-                </button>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link logo-link" href="/">
-                <img src="./assets/Group.svg" alt="Логотип компании">
-                </a>
-            </li>
-            <li class="navbar__item">
-                <img class="divider" src="./assets/divider.svg" alt="">
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link repair-item" href="#">
-                    <img src="./assets/repair.svg" alt="">
-                </a>
-            </li>
-            <li class="navbar__item">
-                <a class="navbar__link check-status" href="#">
-                    <img src="./assets/checkstatus.svg" alt="">
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="navbar_list">
+                <li class="navbar_list_item">
+                    <button class="all_menu">
+                        <img src="./assets/burger.svg" alt="">
+                    </button>
+                </li>
+                <li class="navbar_list_item">
+                    <a class="logo_link" href="/">
+                        <img src="./assets/Group.svg" alt="Логотип компании">
+                    </a>
+                </li>
+                <li class="divider_class">
+                    <img class="divider" src="./assets/divider.svg" alt="">
+                </li>
+                <li class="navbar_list_item">
+                    <a class="repair_item" href="#">
+                        <img src="./assets/repair.svg" alt="">
+                    </a>
+                </li>
+                <li class="navbar_list_item">
+                    <a class="check_status_item" href="#">
+                        <img src="./assets/checkstatus.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
-    <div class="container-sub">
-    <header class="sub-header">
-        <img src="./assets/highlight.svg" alt="">
-    <h1>Услуги и сервисы</h1>
-    </header>
-    <nav class="sub-menu">
-        <a class="sub-menu__item" href="#">
-            Ремонтируемые устройства
-        </a>
-        <a class="sub-menu__item" href="#">
-        Ремонтируемые бренды
-        </a>
-         <a class="sub-menu__item" href="#">
-        Цены на услуги
-        </a>
-         <a class="sub-menu__item" href="#">
-        Адреса сервисных центров
-        </a>
-         <a class="sub-menu__item" href="#">
-        Специальные цены
-        </a>
-         <a class="sub-menu__item" href="#">
-        Отзывы
-        </a>
-    </nav>
+    <div class="container_sub">
+        <div class="decor">
+            <img src="./assets/highlight.svg" alt="">
+            <h1>Услуги и сервисы</h1>
+        </div>
+        <nav class="sub_menu">
+            <a class="sub_menu_item" href="#">
+                Ремонтируемые устройства
+            </a>
+            <a class="sub_menu_item" href="#">
+                Ремонтируемые бренды
+            </a>
+            <a class="sub_menu_item" href="#">
+                Цены на услуги
+            </a>
+            <a class="sub_menu_item" href="#">
+                Адреса сервисных центров
+            </a>
+            <a class="sub_menu_item" href="#">
+                Специальные цены
+            </a>
+            <a class="sub_menu_item" href="#">
+                Отзывы
+            </a>
+        </nav>
     </div>
-    <article class="article">
-        <div class="container-article">
-        <div class="article__text-container">
-        <p class="article__text"> Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество
-            постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
-            нас родным и близким.</p>
+    <div class="article">
+        <article>
+            <div class="article_content">
+                <div class="text_container">
+                    <p class="text"> Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество
+                        постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
+                        нас родным и близким.</p>
+                </div>
+                <div class="read_more">
+                    <img src="./assets/expand.svg" alt="">
+                    <button class="read_more_button">
+                        Читать далее
+                    </button>
+                </div>
             </div>
-            <div class="article__button">
-                <img src="./assets/expand.svg" alt="">
-                <button class="read_more_button">
-                    Читать далее
-                </button>
-            </div>
-            </div>
-    </article>
-    <img class="main_image" src="./assets/Picture%20Copy.jpg" alt="">
+        </article>
+        <img class="main_image" src="./assets/Picture%20Copy.jpg" alt="">
+    </div>
 </main>
 </body>
 </html>
