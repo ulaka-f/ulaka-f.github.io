@@ -63,6 +63,7 @@ button {
 .sub_menu_item:hover {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
+    background-color: #FFFFFF;
 }
 .navbar_list{
     width: 100%;
@@ -260,7 +261,7 @@ main {
 @media (min-width: 1120px) {
     body {
         background-color: #F8F8F8;
-        width: 100%;
+        width: 1120px;
         height: 100%;
         margin: 0;
     }
@@ -336,6 +337,9 @@ main {
     }
     .read_more {
         margin-top: 7px;
+    }
+    main {
+        background-color: #F8F8F8;
     }
 
 }
