@@ -57,7 +57,7 @@ button {
 
 .sub_menu_item {
     border: 2px solid transparent;
-    padding: 8px 20px 8px 20px;
+    padding: 12px 20px 12px 20px;
     display: block;
 }
 .sub_menu_item:hover {
@@ -256,6 +256,9 @@ main {
     .sub_menu {
         width: 753px;
     }
+    .main_image {
+        border-radius: 10px;
+    }
 
 }
 @media (min-width: 1120px) {
@@ -340,6 +343,9 @@ main {
     }
     main {
         background-color: #F8F8F8;
+    }
+    .sub_menu_button {
+        margin-top: -30px;
     }
 
 }
