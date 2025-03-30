@@ -1,92 +1,135 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Верстка блока. Построение сеток + БЭМ именование</title>
+    <title>burger</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <nav class="navbar">
-            <ul class="navbar_list">
-                <li class="navbar_list_item">
-                    <button class="all_menu">
+<div class="body_container">
+    <header class="header">
+        <div class="container_header_menu">
+            <ul class="header_menu_left">
+                <li class="header_menu_item">
+                    <a href="#">
                         <img src="./assets/burger.svg" alt="">
-                    </button>
-                </li>
-                <li class="navbar_list_item">
-                    <a class="logo_link" href="/">
-                        <img src="./assets/Group.svg" alt="Логотип компании">
                     </a>
                 </li>
-                <li class="divider_class">
-                    <img class="divider" src="./assets/divider.svg" alt="">
-                </li>
-                <li class="navbar_list_item">
-                    <a class="repair_item" href="#">
-                        <img src="./assets/repair.svg" alt="">
-                    </a>
-                </li>
-                <li class="navbar_list_item">
-                    <a class="check_status_item" href="#">
-                        <img src="./assets/checkstatus.svg" alt="">
+                <li class="header_menu_item">
+                    <a href="#">
+                        <img src="./assets/Group.svg" alt="">
                     </a>
                 </li>
             </ul>
-        </nav>
-    </div>
-</header>
-<main>
-    <div class="container_sub">
-        <div class="decor">
-            <img src="./assets/highlight.svg" alt="">
-            <h1>Услуги и сервисы</h1>
+            <ul class="header_menu_right">
+                <li class="header_menu_item">
+                    <a href="#">
+                        <img src="./assets/search.svg" alt="">
+                    </a>
+                </li>
+            </ul>
         </div>
-        <nav class="sub_menu">
-            <a class="sub_menu_item" href="#">
-                Ремонтируемые бренды
-            </a>
-            <a class="sub_menu_item" href="#">
-                Ремонтируемые устройства
-            </a>
-            <a class="sub_menu_item" href="#">
-                Цены на услуги
-            </a>
-            <a class="sub_menu_item" href="#">
-                Адреса сервисных центров
-            </a>
-            <a class="sub_menu_item" href="#">
-                Специальные цены
-            </a>
-            <div class="sub_menu_button">
-            <a class="sub_menu_item" href="#">
-                Отзывы
-            </a>
+    </header>
+    <div class="container">
+        <main>
+            <ul class="main_menu">
+                <li class="main_menu_item">
+                    <a class="item" href="#">
+                        <img src="./assets/highlight.svg" alt="">
+                        Ремонт техники
+                    </a>
+                </li>
+                <li class="main_menu_item">
+                    <a class="item" href="#">
+                        <img src="./assets/highlight.svg" alt="">
+                        Услуги и сервисы
+                    </a>
+                </li>
+                <li class="main_menu_item">
+                    <a class="item" href="#">
+                        <img src="./assets/highlight.svg" alt="">
+                        Корпоративным клиентам
+                    </a>
+                </li>
+                <li class="main_menu_item">
+                    <a class="item" href="#">
+                        <img src="./assets/highlight.svg" alt="">
+                        Продавцам техники
+                    </a>
+                </li>
+                <li class="main_menu_item">
+                    <a class="item" href="#">
+                        <img src="./assets/highlight.svg" alt="">
+                        Партнерам
+                    </a>
+                </li>
+                <li class="main_menu_item">
+                    <a class="item" href="#">
+                        <img src="./assets/highlight.svg" alt="">
+                        Производителям
+                    </a>
+                </li>
+                <li class="main_menu_item">
+                    <a class="item" href="#">
+                        <img src="./assets/highlight.svg" alt="">
+                        Наши сервисные сервисы
+                    </a>
+                </li>
+                <li class="main_menu_item">
+                    <a  class="item" href="#">
+                        <img src="./assets/highlight.svg" alt="">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </main>
+        <footer class="footer">
+            <div class="container_footer">
+                <ul class="footer_menu">
+                    <li class="footer_menu_item">
+                        <a href="#">
+                            <img src="./assets/call.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer_menu_item">
+                        <a href="#">
+                            <img src="./assets/chat.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer_menu_item">
+                        <a href="#">
+                            <img src="./assets/profile.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer_info">
+                    <li class="footer_info_item">
+                        mail@cps.com
+                    </li>
+                    <li class="footer_info_item">
+                        <span class="telephone">8 800 890 8900</span>
+                    </li>
+                </ul>
             </div>
-        </nav>
+            <ul class="language">
+                <li class="language_item">
+                    <a class="select" href="">
+                        RU
+                    </a>
+                </li>
+                <li class="language_item">
+                    <a class="select" href="">
+                        EN
+                    </a>
+                </li>
+                <li class="language_item">
+                    <a class="select" href="">
+                        CH
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </div>
-    <div class="article">
-        <article>
-            <div class="article_content">
-                <div class="text_container">
-                    <p class="text"> Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество
-                        постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
-                        нас родным и близким.</p>
-                </div>
-                <div class="read_more">
-                    <img src="./assets/expand.svg" alt="">
-                    <button class="read_more_button">
-                        Читать далее
-                    </button>
-                </div>
-            </div>
-        </article>
-        <img class="main_image" src="./assets/Picture%20Copy.jpg" alt="">
-    </div>
-</main>
+</div>
 </body>
 </html>
