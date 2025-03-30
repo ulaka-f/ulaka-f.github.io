@@ -1,4 +1,5 @@
 @import './reset.css';
+
 @font-face {
     font-family: 'TTLakes';
     src: url('./fonts/TTLakes-Regular.woff') format('woff');
@@ -22,102 +23,266 @@
     font-style: normal;
     font-display: swap;
 }
+
 body {
     font-family: 'TTLakes', sans-serif;
-    width: 320px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
 }
-::-webkit-scrollbar {
+
+main {
+    height: 100vh;
+    background-color: #F8F8F8;
+
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 16px;
+    position: relative;
+    border-bottom: 1px solid #B8FFEC;
+}
+
+.header-left_first-section {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.header-right_third-section {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+}
+
+.header-left_first-section {
+    position: relative;
+}
+
+.header-left_first-section::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 32px;
+    width: 2px;
+    border-radius: 1px;
+    background-color: #EAEAEA;
+    bottom: 24%;
+    right: -13%;
+}
+
+.header-right_second-section {
+    display: none;
+}
+
+.services_item > a {
+    font-size: 16px;
+    color: #7E7E82;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+.services_item > a:hover {
+    background-color: white;
+    border: 2px solid #B8FFEC;
+}
+
+.title {
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+.services_list {
+    display: flex;
+    margin-left: 24px;
+    column-gap: 28px;
+    overflow: scroll;
+    padding-top: 12px;
+    min-height: 58px;
+    max-width: 1096px;
+    flex-wrap: nowrap;
+}
+
+.services_list::-webkit-scrollbar {
     width: 0;
 }
-.body_container{
-    position: fixed;
-    overflow: auto;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 320px;
-    box-shadow: 5px 0 20px 10px rgba(0, 0, 0, 0.1);
-}
-.container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 32px;
 
+.about {
+    background-color: #F8F8F8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 50px 50px;
 }
-.container_header_menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 23px 24px;
+
+.text {
+    overflow: hidden;
+    padding: 0 14px;
+    line-height: 20px;
 }
-.header_menu_left {
-    display: flex;
-    align-items: center;
-    column-gap: 17px;
-}
-.main_menu {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
-}
-.item {
+
+.about_readmore {
     display: flex;
     align-items: center;
-    column-gap: 17px;
-    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-.item img {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-a {
-    color: black;
-    font-size: 16px;
+    column-gap: 6px;
     font-weight: 500;
-    transition: color 0.5s ease-in-out;
-}
-a:hover {
-    color: #7E7E82;
-}
-.item:hover img {
-    opacity: 1;
+    font-size: 16px;
+    margin-left: 16px;
 }
 
-.footer_menu {
-    display: flex;
-    align-items: center;
-    column-gap: 16px;
+.about_img {
+    display: block;
+    border-radius: 10px;
 }
-.footer_info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 12px;
+
+@media (min-width: 768px) {
+    .header-left_first-section::after {
+        bottom: 24%;
+        left: 33%;
+    }
+
+    .header-left_first-section {
+        column-gap: 42px;
+    }
+
+    .header-right_second-section {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        margin-right: 32px;
+        position: relative;
+    }
+
+    .header-right_second-section::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        height: 32px;
+        width: 2px;
+        border-radius: 1px;
+        background-color: #EAEAEA;
+        bottom: 17%;
+        right: -11%;
+    }
+
+    .about {
+        grid-template-areas:
+        "text photo"
+        "text photo"
+        "read_more photo";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-right: 28px;
+    }
+
+    .text {
+        grid-area: text;
+        min-width: 490px;
+        min-height: 160px;
+        margin-left: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .second {
+        margin-top: 15px;
+    }
+
+    .about_readmore {
+        grid-area: read_more;
+        margin-top: -30px;
+    }
+
+    .about_img {
+        grid-area: photo;
+        min-width: 70vh;
+
+    }
 }
-.telephone {
-    font-weight: 700;
-}
-.container_footer {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-}
-.language {
-    display: flex;
-    column-gap: 7px;
-}
-.footer {
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    justify-content: space-between;
-    margin-left: 24px;
-}
-.select:hover {
-    color: #7E7E82;
+
+@media (min-width: 1120px) {
+    .header-left_first-section {
+        display: none;
+    }
+
+    .header-right_second-section {
+        display: none;
+    }
+
+    .repair {
+        position: relative;
+    }
+
+    .repair::before {
+        content: "Оставить заявку";
+        font-weight: 500;
+        font-size: 16px;
+        display: block;
+        width: 150px;
+        height: 24px;
+        right: 55%;
+        bottom: 62%;
+        position: absolute;
+        color: black;
+    }
+
+    .header-right_third-section {
+        column-gap: 150px;
+    }
+
+    .status {
+        position: relative;
+    }
+
+    .status::before {
+        content: "Статус ремонта";
+        font-weight: 500;
+        font-size: 16px;
+        display: block;
+        width: 150px;
+        height: 24px;
+        right: 44%;
+        bottom: 62%;
+        position: absolute;
+        color: black;
+    }
+
+    .container-header {
+        border-bottom: none;
+    }
+
+    main {
+        background-color: white;
+        margin-top: -90px;
+    }
+
+    .about_img {
+        display: block;
+        min-width: 532px;
+        min-height: 307px;
+    }
+
+    .about_readmore {
+        margin-top: -140px;
+    }
+
+    .services_list {
+        column-gap: 28px;
+        flex-wrap: wrap;
+        min-height: 120px;
+
+    }
+
+    .about {
+        margin-top: 15px;
+    }
 }
