@@ -140,3 +140,6 @@ a:hover {
 .ru {
     color: #7E7E82;
 }
+.header_menu_item > a:hover, .footer_menu_item > a:hover {
+    filter: brightness(85%);
+}
